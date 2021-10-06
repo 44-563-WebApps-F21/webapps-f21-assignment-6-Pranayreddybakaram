@@ -42,6 +42,36 @@
         }
     }
     </script>
+    <div class="container">
+        <img src="Afghan-Hound.jpg" alt="Afghan-Hound" id="imgClickAndChange" height="200" width="200" onclick="newImage()">
+        <p id="changeValue">Here each image case values are displayed when clicked on image.</p>
+    </div>
+
+
+    <script>
+        let usingImage = 1;
+
+        function newImage() {
+            let valuesChanged = document.getElementById("changeValue")
+            switch (usingImage) {
+                case 1:
+                    document.getElementById("imgClickAndChange").src = "adelie penguin.jpg";
+                    valuesChanged.innerHTML = "click : " + usingImage;
+                    break;
+                case 2:
+                    document.getElementById("imgClickAndChange").src = "bear.jpg";
+                    valuesChanged.innerHTML = "click : " + usingImage;
+                    break;
+                case 3:
+                    document.getElementById("imgClickAndChange").src = "Afghan-Hound.jpg";
+                    valuesChanged.innerHTML = "click : " + usingImage;
+                    usingImage = 0;
+                    break;
+            }
+            usingImage++;
+        }
+    </script>
+    
 
     </body>
 </html>
