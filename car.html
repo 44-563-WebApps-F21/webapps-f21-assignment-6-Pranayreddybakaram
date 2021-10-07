@@ -5,14 +5,17 @@
     <title>
         Car
     </title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
+    <br>
     <h2>Orders a car Pranay Bhargav Reddy Bakaram</h2>
-
-    <form id="checkbox_form">
+    <br><br>
+    <form id="checkbox_form" class="col-6">
         <div class="form-check">
             <input type="checkbox" id="electricCar" name="carDetails" value="electric">
             <label for="cb1_cheese">electric</label>
@@ -28,23 +31,25 @@
             <label for="cb1_onion">gps</label>
         </div>
         <br>
-        <input type="button" onclick="orderCar()" value="Order a car">
+        <input type="button" onclick="orderCar()" value="Order a car" class="btn btn-success">
     </form>
     <br>
-    <form>
-        <div class="form-group">
-            <label for="form_property">Enter a property</label>
-            <input type="text" id="property" name="property" value="color">
+    <form class="col-6">
+
+        <div class="form-group ">
+            <label for="form_property" class="from-lable">Enter a property</label>
+            <input type="text" id="property" name="property" value="color" class="form-control">
         </div>
         <div class="form-group">
-            <label for="form_value">Enter a value</label>
-            <input type="text" id="value" name="value">
+            <label for="form_value" class="from-lable">Enter a value</label>
+            <input type="text" id="value" name="value" class="form-control">
         </div>
 
-        <input type="button" onclick="updateCar()" value="Update the car">
+        <input type="button" onclick="updateCar()" value="Update the car" class="btn btn-success">
     </form>
     <br>
-    <p id="carType">This text will be replaced </p>
+    <p id="carType" style="color: chocolate; padding-left: 1%;">This text will be replaced </p>
+
     <br>
 
 
